@@ -9,3 +9,7 @@ def outer():
 closure = outer()
 print(closure())
 print(closure())
+
+
+import sys
+print(sys.version)
