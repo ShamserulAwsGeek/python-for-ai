@@ -27,6 +27,12 @@
 
 
 #Variable names are case-sensitive:
-a = 4
-A = "Sally"
+# a = 4
+# A = "Sally"
 #A will not overwrite a
+
+#Python allows you to assign values to multiple variables in one line:
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
