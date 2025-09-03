@@ -30,5 +30,33 @@
 # print(a.replace("H", "J"))
 
 
-a = "Hello, World!"
-print(a.split(","))
+# a = "Hello, World!"
+# print(a.split(","))
+
+# a = "Hello"
+# b = "World"
+# c = "I am from India"
+# d = a + " " +  b + " " +c
+# print(d)
+
+# age = 36
+# txt = f"My name is John, I am {age}"
+# print(txt)
+
+
+# age = 30
+# txt = f"my name is Shamserul, and I am {age}"
+# print(txt)
+
+# price = 59
+# txt = f"The price is {price} dollars"
+# print(txt)
+
+
+# price = 59
+# txt = f"The price is {price:.2f} dollars"
+# print(txt)
+
+
+txt = f"The price is {20 * 59} dollars"
+print(txt)
