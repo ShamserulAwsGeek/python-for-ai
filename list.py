@@ -20,6 +20,24 @@
 # thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # print(thislist[2:])
 
+# thislist = ["apple", "banana", "cherry"]
+# thislist.insert(2, "watermelon")
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1:2] = ["blackcurrant", "watermelon"]
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.append("orange")
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.insert(3,"orange")
+# print(thislist)
+
 thislist = ["apple", "banana", "cherry"]
-thislist.insert(2, "watermelon")
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
 print(thislist)
