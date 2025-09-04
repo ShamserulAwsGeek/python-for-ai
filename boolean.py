@@ -65,10 +65,14 @@
 
 # print(myFunction())
 
-def myFunction() :
-    return False
+# def myFunction() :
+#     return False
 
-if myFunction():
-    print("YES!")
-else:
-    print("NO!")
+# if myFunction():
+#     print("YES!")
+# else:
+#     print("NO!")
+
+
+x = 200
+print(isinstance(x, int))
