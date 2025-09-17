@@ -47,6 +47,31 @@
 # thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
 # print(thislist)
 
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1:2] = ["watermelon"]
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.insert(2, "orange")
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+# thislist.remove("banana")
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.pop()
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# del thislist[0]
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.clear()
+# print(thislist)
+
+
 thislist = ["apple", "banana", "cherry"]
-thislist[1:3] = ["watermelon"]
-print(thislist)
+for x in thislist:
+  print(x)
