@@ -37,7 +37,16 @@
 # thislist.insert(3,"orange")
 # print(thislist)
 
+# thislist = ["apple", "banana", "cherry"]
+# tropical = ["mango", "pineapple", "papaya"]
+# thislist.extend(tropical)
+# print(len(thislist))
+# print(type(thislist))
+
+#list constructor:
+# thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+# print(thislist)
+
 thislist = ["apple", "banana", "cherry"]
-tropical = ["mango", "pineapple", "papaya"]
-thislist.extend(tropical)
+thislist[1:3] = ["watermelon"]
 print(thislist)
