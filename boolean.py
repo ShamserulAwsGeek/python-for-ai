@@ -74,5 +74,8 @@
 #     print("NO!")
 
 
-x = 200
-print(isinstance(x, int))
+# x = 200
+# print(isinstance(x, int))
+
+print(bool("Hello"))
+print(bool(15))
