@@ -132,10 +132,14 @@
 list1 = ["a", "b" , "c"]
 list2 = [1, 2, 3]
 list3 = [4,5,6]
+list4 =[7,8,9,10]
 
 for x in list2:
   list1.append(x)
 for y in list3:
   list1.append(y)
+
+for z in list4:
+  list1.append(z)
 
 print(list1)
