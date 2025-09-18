@@ -131,8 +131,11 @@
 
 list1 = ["a", "b" , "c"]
 list2 = [1, 2, 3]
+list3 = [4,5,6]
 
 for x in list2:
   list1.append(x)
+for y in list3:
+  list1.append(y)
 
 print(list1)
