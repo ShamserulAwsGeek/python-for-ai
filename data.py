@@ -47,6 +47,5 @@ import random
 print(random.randrange(1, 12))
 
 
-print("It's alright")
-print("He is called 'Johnny'")
-print('He is called "Johnny"')
+
+
