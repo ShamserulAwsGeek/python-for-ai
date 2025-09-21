@@ -142,3 +142,56 @@
 #   print("Yes, 'model' is one of the keys in the thisdict dictionary")
 # else:
 #     print("No, 'model' key dictionary mai nahi hai")
+
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict["year"] = 2018
+# print(thisdict)
+# x = thisdict.items()
+# print(x)
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict.update({"year": 2020})
+# print(thisdict)\
+
+
+# thisdict = {
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict.pop("model")
+# print(thisdict)
+
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict.popitem()
+# print(thisdict)
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# for x in thisdict.values():
+#   print(x)
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x,y in thisdict.items():
+    print(x,y)
