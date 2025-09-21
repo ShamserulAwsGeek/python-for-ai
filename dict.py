@@ -31,5 +31,38 @@
 # print(thisdict)
 
 
-thisdict = dict(name = "John", age = 36, country = "Norway")
-print(thisdict)
+# thisdict = dict(name = "John", age = 36, country = "Norway")
+# print(thisdict)
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# x = thisdict["model"]
+# print(x)
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# x = thisdict.keys()
+# print(x)
+
+
+# car = {
+# "brand": "Ford",
+# "model": "Mustang",
+# "year": 1964
+# }
+
+# x = car.keys()
+
+# print(x) #before the change
+
+# car["color"] = "white"
+
+# print(x) #after the change
+
+
