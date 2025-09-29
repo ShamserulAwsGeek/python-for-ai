@@ -17,11 +17,11 @@ def changecase(func):
 
 @changecase
 def myfunction():
-  return "Hello Sally"
+  return "Hello Maheen"
 
 @changecase
 def otherfunction():
-  return "I am speed!"
+  return "I am Sham!"
 
 print(myfunction())
 print(otherfunction())
