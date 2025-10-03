@@ -20,5 +20,5 @@
 # print(r[:3])
 
 
-r = range(0, 10, 2)
-print(len(r))
+# r = range(0, 10, 2)
+# print(len(r))
