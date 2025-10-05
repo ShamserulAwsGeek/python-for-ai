@@ -11,3 +11,9 @@ class Person:
 
 x = Person("John", "Doe")
 x.printname()
+
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
