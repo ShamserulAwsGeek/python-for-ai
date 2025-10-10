@@ -31,3 +31,40 @@
 # with open("sham.txt") as f:
 #   for x in f:
 #     print(x)
+
+#Open the file "sham.txt" and append content to the file:
+# with open("sham.txt", "a") as f:
+#   f.write("Now the file has more content!")
+
+# #open and read the file after the appending:
+# with open("sham.txt") as f:
+#   print(f.read())
+
+#Open the file "sham.txt" and overwrite the content:
+# with open("sham.txt", "w") as f:
+#   f.write("Woops! I have deleted the content!")
+
+# #open and read the file after the overwriting:
+# with open("sham.txt") as f:
+#   print(f.read())
+
+#Create a new file called "myfile.txt":
+# f = open("myfile.txt", "x")
+
+#Remove the file "myfile.txt":
+# import os
+# os.remove("myfile.txt")
+
+
+#Check if file exists, then delete it:
+# import os
+# if os.path.exists("myfile.txt"):
+#   os.remove("myfile.txt")
+# else:
+#   print("The file does not exist")
+
+#To delete an entire folder, use the os.rmdir() method:
+import os
+os.rmdir("myfolder")
+
+ 
