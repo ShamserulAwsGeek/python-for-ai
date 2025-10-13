@@ -28,3 +28,12 @@ for i in my_array:
     minVal = i
 
 print('Lowest value:', minVal)
+
+#Create an algorithm to find the lowest value in a list:
+my_array = [7, 12, 9, 4, 11, 8]
+maxVal = my_array[0]
+
+for i in my_array:
+  if i > maxVal:
+    maxVal = i
+print('Highest value:', maxVal)
