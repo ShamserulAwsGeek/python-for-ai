@@ -143,3 +143,7 @@ for z in list4:
   list1.append(z)
 
 print(list1)
+
+#List comprehension:
+lst = [i for i in range(5)]
+print(lst)
