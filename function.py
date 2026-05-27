@@ -104,3 +104,13 @@
 
 # print("Recursion Example Results:")
 # tri_recursion(6)
+
+
+def average(*numbers):
+  print(type(numbers))
+  sum = 0
+  for i in numbers:
+    sum = sum + i
+  print("Average of numbers is ", sum/len(numbers))
+
+average(1,2,3,4,5)
