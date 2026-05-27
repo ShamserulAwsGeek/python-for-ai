@@ -147,3 +147,7 @@ print(list1)
 #List comprehension:
 lst = [i for i in range(5)]
 print(lst)
+
+names= ["Milano","Sarah","Bruno","Anastassia","Rosa"]
+namesWith_o = [item for item in names if(len(item)>4)]
+print(namesWith_o)
