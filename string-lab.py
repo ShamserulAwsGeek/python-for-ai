@@ -60,3 +60,16 @@
 
 # txt = f"The price is {20 * 59} dollars"
 # print(txt)
+
+
+#Formate string :
+name = "Shamserul"
+country = "India"
+print(f"Hey! my name is {name} and I am from {country}")
+
+txt = "for only {price:.3f} dollars ! "
+print(txt.format(price=49.90890))
+
+cost = 500
+item = "cake"
+print(f"The price of {item } is {cost:.2f}")
