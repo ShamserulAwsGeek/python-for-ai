@@ -116,11 +116,18 @@
 #sets are unordered collections of data items. 
 #sets does not repeat its value.
 #sets place value is unchangeable
+#sets does not maintain order
 s = {2,3,2,4,5,5,7}
 print(s)
 
 #Define empty set:
 sham = set()
-sham = set()
 print(type(sham))
 <class 'set'>
+
+#set union : merging two differenet sets
+s1 = {1,3,5,7,9}
+s2 = {2,4,6,8,10}
+print(s1.union(s2))
+print(s1, s2)
+
