@@ -109,3 +109,18 @@
 
 # z = x.union(y)
 # print(z)
+
+
+
+#Sets New:
+#sets are unordered collections of data items. 
+#sets does not repeat its value.
+#sets place value is unchangeable
+s = {2,3,2,4,5,5,7}
+print(s)
+
+#Define empty set:
+sham = set()
+sham = set()
+print(type(sham))
+<class 'set'>
