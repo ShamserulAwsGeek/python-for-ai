@@ -52,4 +52,19 @@
 
 # for x in [0, 1, 2]:
 #   pass
-  
+  for i in range(5):
+  print(i)
+
+else:
+  print("No value ahead")
+
+
+for i in range(6):
+  print(i)
+
+  if i == 4:
+    break
+else:
+ print("No value ahead")
+ 
+ 
