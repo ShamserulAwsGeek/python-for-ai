@@ -259,3 +259,13 @@ for y in obj:
 
 dic = {"Bulbul":"Maheen", "Sham":"Ashriti", "Ashriti":"Maheen"}
 print(dic["Bulbul"])
+
+info = {'name':'Shams','age': '30', 'eligible':'True'}
+print(info)
+print(info.keys())
+print(info.values())
+print(info.items())
+print(info['name'])
+
+for key in info.keys():
+  print(f"The value to the corresponding {key} is {info[key]}")
