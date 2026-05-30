@@ -67,4 +67,17 @@
 import os
 os.rmdir("myfolder")
 
- 
+ #File Handling:
+
+a = input("Enter num:")
+print(f"multiplication table of {a} is:")
+
+try:
+  for i in range(1,11):
+    print(f"{int(a)} x {i} = {int(a)*i}")
+
+except:
+  print('Invalid input')
+
+print("some important line of codes")
+print("End of program")
