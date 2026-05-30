@@ -269,3 +269,15 @@ print(info['name'])
 
 for key in info.keys():
   print(f"The value to the corresponding {key} is {info[key]}")
+
+for key, values in info.items():
+  print(f"The value to the corresponding {key} is {values}")
+
+#methods in dictionary:
+ep1 = {122:70, 673:89, 875:90, 366: 97}
+ep2 = {324: 78, 736:56, 373:54}
+print(ep1)
+ep1.update(ep2)
+print(ep1)
+
+
