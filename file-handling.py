@@ -81,3 +81,14 @@ except:
 
 print("some important line of codes")
 print("End of program")
+
+#Exception handling:
+try: 
+  num = int(input('enter an integer:'))
+  a = [4,8]
+  print(a[num])
+except ValueError:
+  print("Enetred number is not integer")
+
+except IndexError:
+  print("Index Error")
