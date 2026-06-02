@@ -34,7 +34,7 @@ for i in range(0, len(questions)):
   print(f"c.{question[3]}       d.{question[4]}")
 
   reply = int(input("Enter your answer 1-4"))
-  if(reply == questions[-1]):
+  if(reply == question[-1]):
     print(f"Correct answer, you have won {levels[i]}")
     if(i ==4):
       money = 10000
