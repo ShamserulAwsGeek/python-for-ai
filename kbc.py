@@ -33,7 +33,10 @@ for i in range(0, len(questions)):
   print(f"a.{question[1]}       b.{question[2]}")
   print(f"c.{question[3]}       d.{question[4]}")
 
-  reply = int(input("Enter your answer 1-4"))
+  reply = int(input("Enter your answer (1-4) or 0 to quit:\n"))
+  if (reply == 0):
+    money = levels[i-1]
+    break 
   if(reply == question[-1]):
     print(f"Correct answer, you have won {levels[i]}")
     if(i ==4):
