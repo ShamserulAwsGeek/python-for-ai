@@ -45,3 +45,4 @@ for i in range(0, len(questions)):
     break
   else:
     print(f"Wrong answer!")
+print(f"your take home money is {money}")
