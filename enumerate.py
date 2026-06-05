@@ -9,3 +9,8 @@ for index, mark in enumerate(marks):
   print(mark)
   if(index ==3):
     print("Sham is awesoem!")
+
+
+x = ('apple', 'banana', 'cherry')
+y = enumerate(x)
+print(type(y))
