@@ -1,0 +1,11 @@
+# Definition and Usage
+# The enumerate() function takes a collection (e.g. a tuple) and returns it as an enumerate object.
+
+# The enumerate() function adds a counter as the key of the enumerate object.
+
+
+marks = [12, 34,56,3,56,45,4]
+for index, mark in enumerate(marks):
+  print(mark)
+  if(index ==3):
+    print("Sham is awesoem!")
