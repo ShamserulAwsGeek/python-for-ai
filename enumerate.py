@@ -14,3 +14,9 @@ for index, mark in enumerate(marks):
 x = ('apple', 'banana', 'cherry')
 y = enumerate(x)
 print(type(y))
+
+fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
+print(type(fruits))
+
+for index,fruit in enumerate(fruits,start=1):
+  print(index,fruit)
