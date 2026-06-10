@@ -1,4 +1,5 @@
 def welcome():
     print("Welcome from Shamserul,Bengaluru!")
 
-welcome()
+if __name__ == "__main__":
+ welcome()
