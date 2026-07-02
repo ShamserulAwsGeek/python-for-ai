@@ -130,3 +130,24 @@ if(a<5 or a>9):
   raise ValueError("value is not in range")
 else:
   print("value is in range")
+
+
+
+
+#Reading. a file:
+f = open('requirements.txt', 'r')
+text = f.read()
+print(text)
+
+
+# #writing to a file:
+f = open('requirements.txt', 'w')
+f.write('numpy\n')
+
+#appending to a file:
+f = open('requirements.txt', 'a')
+f.write('\npandas')
+f.close()
+
+with open('requirements.txt', 'a') as f:
+   f.write('\nnumpy')
