@@ -151,3 +151,12 @@ f.close()
 
 with open('requirements.txt', 'a') as f:
    f.write('\nnumpy')
+
+
+
+f = open("requirements.txt", "r")
+while True:
+    line = f.readline()
+    if not line:
+        break
+    print(line.strip())
