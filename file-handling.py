@@ -167,7 +167,6 @@ while True:
 # These are file pointer functions — they let you control where you are inside a file while reading or writing.
 # The File Pointer Concept
 # When you open a file, Python places an invisible cursor (pointer) at a position in the file — just like a cursor in a text editor.
-
 # tell() — Where am I?
 # Returns the current position of the file pointer (in bytes).
 
@@ -189,5 +188,14 @@ f.close()
 
 
 
-# tell() — Where am I?
-Returns the current position of the file pointer (in bytes).
+# seek() — Go to a position
+# Moves the file pointer to a specific location.
+#f.seek(offset, whence)
+
+#Example 1 — Jump to a specific position
+f = open("sample.txt", "r")   # "Hello, World!"
+
+f.seek(7)                      # move to position 7
+print(f.read())                # "World!"
+
+f.close()
