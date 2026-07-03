@@ -197,5 +197,5 @@ f = open("sample.txt", "r")   # "Hello, World!"
 
 f.seek(7)                      # move to position 7
 print(f.read())                # "World!"
-
 f.close()
+
