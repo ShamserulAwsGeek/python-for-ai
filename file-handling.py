@@ -160,3 +160,34 @@ while True:
     if not line:
         break
     print(line.strip())
+
+
+
+# seek() and tell() in Python
+# These are file pointer functions — they let you control where you are inside a file while reading or writing.
+# The File Pointer Concept
+# When you open a file, Python places an invisible cursor (pointer) at a position in the file — just like a cursor in a text editor.
+
+# tell() — Where am I?
+# Returns the current position of the file pointer (in bytes).
+
+f = open("sample.txt", "w")
+f.write("Hello, World!")
+f.close()
+
+f = open("sample.txt", "r")
+print(f.tell())   # 0 — at the beginning
+
+f.read(5)         # reads "Hello"
+print(f.tell())   # 5 — moved forward 5 bytes
+
+f.read(2)         # reads ", "
+print(f.tell())   # 7
+
+f.close()
+
+
+
+
+# tell() — Where am I?
+Returns the current position of the file pointer (in bytes).
