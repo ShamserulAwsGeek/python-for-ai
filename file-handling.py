@@ -186,8 +186,6 @@ print(f.tell())   # 7
 f.close()
 
 
-
-
 # seek() — Go to a position
 # Moves the file pointer to a specific location.
 #f.seek(offset, whence)
@@ -199,3 +197,15 @@ f.seek(7)                      # move to position 7
 print(f.read())                # "World!"
 f.close()
 
+
+#whole code:
+with open('requirements.txt', 'r') as f:
+    print(type(f))
+
+    #move to the  10th byte in the file:
+    f.seek(2)
+
+    #read the next 5 bytes from the file:
+    print(f.tell())
+    data = f.read(5)
+    print(data)
