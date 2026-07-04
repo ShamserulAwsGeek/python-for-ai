@@ -63,3 +63,13 @@ result = reduce(
 )
 
 print(result)  # 4 + 16 + 36 + 64 + 100 = 220
+
+
+from functools import reduce
+
+num = [1, 2, 3, 4, 5]
+
+def mysum(x, y):
+    return x + y
+sum = reduce(mysum, num)
+print(sum)
