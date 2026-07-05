@@ -79,6 +79,58 @@ class Dog(Animal):
 animals = [Cat("Whiskers"), Dog("Buddy"), Animal("Generic Animal")]
 for animal in animals:
     print(animal.speak())
+-----------------------------------------------------------
+
+#Polymorphism:
+#The same interface works differently depending on the object type.
+class Shape:
+    def area(self):
+        raise NotImplementedError
+    
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14 * self.radius ** 2
+    
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+    
+Shapes = [Circle(5), Rectangle(4, 6)]
+for shape in Shapes:
+    print(f"The area of the shape is: {shape.area()}")
+
+-----------------------------------------------------------
+
+#Dunder Method:
+# Magic methods let you define how objects behave with built-in operations.
+
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return f"Vector({self.x}, {self.y})"
+    
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+    
+    def __len__(self):
+        return int((self.x**2 + self.y**2)**0.5)
+    
+v1 = Vector(2,  4)
+v2 = Vector(3,  4)
+
+print(v1 + v2)  
+print(len(v1))
 
 
 
