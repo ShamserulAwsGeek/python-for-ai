@@ -35,3 +35,50 @@ b = Person("Maheen", "Chef")
 
 print(a.info())
 print(b.info())
+---------------------------------------------------
+
+#Encapsulation:
+#Bundling data and restricting direct access using private/protected attributes.
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance = balance        #Private(name mangling) attribute
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def get_balance(self):     #controller access via methiod
+        return self.__balance
+    
+
+acc = BankAccount(1000)
+acc.deposit(500)
+print(acc.get_balance())  # Output: 1500
+#print(acc.__balance)  # This will raise an AttributeError since __balance is private
+
+--------------------------------------------------------
+
+#Inheritance:
+# A child class inherits attributes and methods from a parent class.
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return "Some generic animal sound"
+    
+
+class Cat(Animal):       #Cat class inherits from Animal
+    def speak(self):     #overriding the parent method of Animal class
+        return f"{self.name} says Meow!"
+    
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+animals = [Cat("Whiskers"), Dog("Buddy"), Animal("Generic Animal")]
+for animal in animals:
+    print(animal.speak())
+
+
+
