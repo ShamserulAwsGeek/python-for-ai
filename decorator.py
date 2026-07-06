@@ -16,6 +16,75 @@ def add(a, b):
 
 hello()
 add(5, 3)
+------------------------------------
+------------------------------------
+#Another example of decorator:
+def greater_first(func):
+    def wrapper(a, b):
+        if a < b:
+            a, b = b, a
+        return func(a, b)
+    return wrapper
+
+@greater_first
+def divide(a, b):
+    return a / b
+
+@greater_first
+def sub(a, b):
+    return a - b
+
+result1 = divide(2, 20)
+result2 = sub(2, 20)
+
+print(result1)
+print(result2)
+
+------------------------------------
+------------------------------------
+###Another examples of decorators:
+def greater_first(func):
+    def wrapper(*args, **kwargs):
+        a,b = args[0], args[1]
+        if a < b:
+            a, b = b, a
+        return func(a, b, *args[2:], **kwargs)
+    return wrapper
+
+def log_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("values", args, " ", kwargs)
+        result = func(*args, **kwargs)  
+        print("result", result)
+        return result
+    return wrapper
+
+@log_decorator
+@greater_first
+def divide(a, b):
+    return a / b
+
+@log_decorator
+@greater_first
+def sub(a, b):
+    return a - b
+
+@log_decorator
+def add(a, b, c):
+    return a + b + c
+
+
+result1 = divide(2, 20)
+print("result1", result1)
+
+result2 = sub(10, 15)
+print("result2", result2)
+
+result3 = add(5, 3, 2)
+print("result3", result3)
+
+
+
 
 
 
