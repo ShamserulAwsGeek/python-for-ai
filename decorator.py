@@ -1,3 +1,22 @@
+#A decorator is a function that wraps another function to extend or 
+#modify its behavior — without changing the original function's code.
+def greet(fx):
+    def mfx(*args, **kwargs):
+        print("Hello!")
+        return fx(*args, **kwargs)
+    return mfx
+
+@greet
+def hello():
+    print("Welcome to the Python lab.")
+
+hello()
+
+
+
+
+
+
 # def changecase(func):
 #   def myinner():
 #     return func().upper()
