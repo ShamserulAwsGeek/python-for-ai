@@ -10,7 +10,12 @@ def greet(fx):
 def hello():
     print("Welcome to the Python lab.")
 
+@greet
+def add(a, b):
+    print(f"The sum of {a} and {b} is {a + b}")
+
 hello()
+add(5, 3)
 
 
 
