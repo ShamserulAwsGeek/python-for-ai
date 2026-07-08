@@ -30,3 +30,25 @@ def welcome(self):
 
 x = Student("Shams", "Haque", 2017)
 print(x.welcome())
+
+
+---------------------------
+-----------------------------
+
+class Employee:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+
+    def display_info(self):
+        print(f"Name: {self.name}, ID: {self.id}")
+
+class Programmer(Employee):
+    def show_language(self, language):
+        print("The default programming language is: Python")
+
+e = Employee("John Doe", 12345)
+e.display_info()
+p = Programmer("Shamserul", 12346)
+p.display_info()
+p.show_language("Python")
