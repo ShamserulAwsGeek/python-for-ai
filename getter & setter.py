@@ -48,3 +48,29 @@ p = Person("John", 25)
 print(p.age)   # 25 — calls getter
 p.age = 30     # calls setter
 p.age = -5     # raises ValueError
+
+
+-------------------------------------
+--------------------------------------
+# @property — the Pythonic way to control access
+# Instead of getters/setters, Python uses properties:
+class Circle:
+    def __init__(self, radius):
+        self.__radius = radius
+
+    @property
+    def radius(self):           # getter
+        return self.__radius
+
+    @radius.setter
+    def radius(self, value):    # setter with validation
+        if value < 0:
+            raise ValueError("Radius can't be negative")
+        self.__radius = value
+
+c = Circle(5)
+print(c.radius)   # 5  — clean attribute-style access
+c.radius = 10     # calls setter
+c.radius = -1     # ❌ ValueError
+
+
