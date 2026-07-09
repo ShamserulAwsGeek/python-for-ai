@@ -52,3 +52,18 @@ e.display_info()
 p = Programmer("Shamserul", 12346)
 p.display_info()
 p.show_language("Python")
+
+
+
+______________________________
+______________________________
+#Access Modifiers/Specifiers:
+class Employee:
+    def __init__(self, name):
+        self.__name = name
+        
+a = Employee("Shamserul")
+#print(a.__name)    #Can't be accessed directly because it's a private attribute.
+print(a._Employee__name)  # Accessing the private attribute using name mangling.
+print(a.__dir__())  # This will show all attributes and methods of the object, including the mangled name.
+print(a.__dict__)  # This will show the instance attributes, incl
