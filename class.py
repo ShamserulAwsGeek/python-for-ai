@@ -76,7 +76,24 @@
 # p1.myfunc()
 
 
+#Static Method : static method is a method that belongs to the class itself, not to any instance (object) of the class.
+
+class Math:
+    def __init__(self,num):
+        self.num = num
 
 
+    def addtonum(self, n):
+        self.num += n
 
+    @staticmethod
+    def add(x, y):
+        return x + y
+    
+result = Math.add(5, 10)
+print(result)  # Output: 15
 
+a = Math(10)
+print(a.num)  # Output: 10
+a.addtonum(5)
+print(a.num)  # Output: 15
