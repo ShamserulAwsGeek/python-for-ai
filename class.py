@@ -97,3 +97,22 @@ a = Math(10)
 print(a.num)  # Output: 10
 a.addtonum(5)
 print(a.num)  # Output: 15
+
+#The core idea: if a method doesn't need self or cls, 
+#it's a good candidate to be static. 
+#It signals to readers "this doesn't touch object state" and can be called without creating an object.
+
+class Example:
+    
+    class_var = 0
+
+    def instance_method(self):      # Access instance (self) + class data
+        return self
+
+    @classmethod
+    def class_method(cls):          # Access class (cls), not instance
+        return cls.class_var
+
+    @staticmethod
+    def static_method():            # Access neither — fully independent
+        return "I'm standalone"
