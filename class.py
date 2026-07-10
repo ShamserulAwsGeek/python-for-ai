@@ -116,3 +116,31 @@ class Example:
     @staticmethod
     def static_method():            # Access neither — fully independent
         return "I'm standalone"
+
+---------------------------------------
+---------------------------------------
+#Instance Variable and Class Variable:
+#Class Variable -- Shared across all instances of the class. Defined directly in the class body.the neighborhood name (same for every house built from that blueprint)
+#Instance Variable ---Unique to each object. Defined inside __init__ using self.the house color (each house can be different)
+
+class Employee:
+    company_name = "Optum"
+    no_of_employees = 0
+
+    def __init__(self,name):
+        self.name = name
+        self.raise_amount = 1.04
+        Employee.no_of_employees += 1
+    
+    def showDetails(self):
+        print(f"Employee Name: {self.name} and the raise amount in {self.no_of_employees} sized  {self.company_name} is: {self.raise_amount}")
+
+e1 = Employee("Shamserul")
+e1.raise_amount = 2
+e1.company_name = "Optum India"
+e1.showDetails()
+print(Employee.company_name)
+
+e2 = Employee("Maheen")
+e2.showDetails()
+
