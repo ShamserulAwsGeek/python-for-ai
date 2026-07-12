@@ -165,3 +165,25 @@ l1 = Library()
 l1.add_book("Python Programming")
 l1.add_book("Data Science")
 l1.showinfo()
+-----------------------------------
+---------------------------------\
+#Class Method: Class methods in Python are methods bound to the class itself rather than to an instance. 
+#They receive the class (cls) as their first argument instead of self.
+
+class Employee:
+    company = "Optum"
+
+    def show(self):
+        print(f"My name is {self.name} and I work at company {self.company}")
+
+    @classmethod
+    def change_company(cls, new_company):
+        cls.company = new_company
+
+e1 = Employee()
+e1.name = "Shmaserul"
+e1.show()  # Output: My name is Shmaserul and I work at company Optum
+
+e1.change_company("Illumina")
+e1.show()  # Output: My name is Shmaserul and I work at company Illumina
+print(Employee.company)  # Output: Illumina
