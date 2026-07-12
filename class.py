@@ -170,6 +170,7 @@ l1.showinfo()
 #Class Method: Class methods in Python are methods bound to the class itself rather than to an instance. 
 #They receive the class (cls) as their first argument instead of self.
 
+#Use the @classmethod decorator:
 class Employee:
     company = "Optum"
 
@@ -187,3 +188,49 @@ e1.show()  # Output: My name is Shmaserul and I work at company Optum
 e1.change_company("Illumina")
 e1.show()  # Output: My name is Shmaserul and I work at company Illumina
 print(Employee.company)  # Output: Illumina
+-------------------------------------------
+-------------------------------------------
+#Class Method as alternative constructor:
+# The idea is simple: __init__ is just one way to build an object. 
+# Class methods let you offer multiple named entry points that each handle different input formats,
+# all returning a properly constructed instance via cls(...).
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def display_info(self):
+        print(f"Name: {self.name}, Salary: {self.salary}")
+
+
+    @classmethod
+    def from_string(cls, string):
+        return cls(string.split("-")[0], int(string.split("-")[1]))
+      
+e1 = Employee("Shamserul", 50000)
+print(e1.name)
+print(e1.salary)
+
+string = "Maheen-40000"
+e2 = Employee.from_string(string)
+print(e2.name)
+print(e2.salary)
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+
+    @classmethod
+    def from_string(cls, string):
+        return cls(string.split("-")[0], int(string.split("-")[1]))
+    
+p2 = Person("Shamserul", 25)
+p2 = Person.from_string(string)
+print(p2.name)
+print(p2.age)
