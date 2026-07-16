@@ -52,3 +52,15 @@ def create_session(user):
 
 token = create_session("Ram")
 print(token)   # use this as login session key
+---------------------------
+--------------------------
+#Request Tracking:
+from uuid import uuid4
+
+def handle_request(data):
+    request_id = uuid4()           # track each request uniquely
+    print(f"Request {request_id} started")
+    # process...
+    print(f"Request {request_id} completed")
+
+
