@@ -27,3 +27,31 @@ d.make_sound()  # Output: Doggo barks.
 
 a = Animal("Generic Animal", "Unknown")
 a.make_sound()  # Output: Generic Animal makes a sound.
+
+
+----------------------------
+-----------------------------
+
+class Parent:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, my name is {self.name}")
+
+
+class Child(Parent):  # Single inheritance
+    def __init__(self, name, age):
+        super().__init__(name)  # calls Parent's __init__
+        self.age = age
+
+    def show_age(self):
+        print(f"I am {self.age} years old")
+
+
+c = Child("Sham", 30)
+c.greet()      # inherited from Parent
+c.show_age()   # defined in Child
+
+
+
