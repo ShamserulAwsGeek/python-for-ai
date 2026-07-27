@@ -38,3 +38,30 @@ c = Consultant("Shamserul", "AI Development", 50)
 c.display()
 c.show_project()
 c.show_rate()
+
+-----------------------------
+-----------------------------
+class A:
+    def method_a(self):
+        print("Method A from class A")
+
+class B(A):              # Single inheritance (B inherits A)
+    def method_b(self):
+        print("Method B from class B")
+
+class C(A):               # Hierarchical inheritance (C also inherits A)
+    def method_c(self):
+        print("Method C from class C")
+
+class D(B, C):             # Multiple inheritance (D inherits B and C)
+    def method_d(self):
+        print("Method D from class D")
+
+
+obj = D()
+obj.method_a()
+obj.method_b()
+obj.method_c()
+obj.method_d()
+
+print(D.__mro__)  # Method Resolution Order
