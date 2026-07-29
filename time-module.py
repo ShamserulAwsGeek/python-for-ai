@@ -49,6 +49,16 @@ start = time.time()
 # ... do some work ...
 end = time.time()
 
+--------------------------
+--------------------------
+#formatted time:
+import time
+
+t = time.localtime()
+
+formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", t)
+
+print("Current time:", formatted_time)
 
 
 
