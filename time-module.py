@@ -35,6 +35,19 @@ print(t)  # 1753776000.123456 (seconds since Jan 1, 1970 - the "epoch")
 
 -----------------------------
 -----------------------------
+import time
+
+t = time.time()
+print("Start time:", t)
+
+time.sleep(5)
+t2 = time.time()
+print("End time:", t2)
+
+
+start = time.time()
+# ... do some work ...
+end = time.time()
 
 
 
