@@ -26,4 +26,17 @@ print(time.time() - init)
 usingfor()
 print(time.time() - init)
 
+-----------------------------
+-----------------------------
+import time
+
+t = time.time()
+print(t)  # 1753776000.123456 (seconds since Jan 1, 1970 - the "epoch")
+
+-----------------------------
+-----------------------------
+
+
+
+
 
